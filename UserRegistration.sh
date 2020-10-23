@@ -23,3 +23,4 @@ else
 fi
 
 #uc3 email validation
+read -p "enter email:" email
