@@ -33,3 +33,4 @@ else
 fi
 
 #uc4 mobile number validation
+read -p "enter mobile_num:" mobile_num
