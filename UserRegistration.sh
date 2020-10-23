@@ -35,3 +35,9 @@ fi
 #uc4 mobile number validation
 read -p "enter mobile_num:" mobile_num
 mobilenum_Pattern="^[0-9]{2}[[:space:]][0-9]{10}$"
+if [[ $mobile_num =~ $mobilenum_Pattern ]]
+then
+        echo "valid"
+else
+        echo "invalid"
+fi
