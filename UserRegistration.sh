@@ -21,3 +21,5 @@ then
 else
         echo "invalid"
 fi
+
+#uc3 email validation
