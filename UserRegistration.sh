@@ -51,3 +51,13 @@ then
 else
         echo "invalid"
 fi
+
+#uc6 Having atleast one Uppercase in string
+read -p "enter password:" password
+pwd_Pattern="^(?=.*[A-Z])$"
+if [[ $password =~ $pwd_Pattern ]]
+then
+        echo "valid"
+else
+        echo "invalid"
+fi
