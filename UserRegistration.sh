@@ -66,3 +66,13 @@ then
 else
         echo "invalid"
 fi
+
+#uc7 Having atleast one numeric in password
+shopt -s extglob
+pwd_Pattern=$(echo $Abcdefg1 | grep -p "^(?=.{8,}).*[A-Z].*[0-7].*")
+if [[ -z "${pwd_Pattern}" ]]
+then
+        echo "valid"
+else
+        echo "invalid"
+fi
